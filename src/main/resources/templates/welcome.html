@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample ThymeLeaf Page</title>
+</head>
+<body>
+    <h1>
+        <span th:text="'Hello, ' + ${message}"></span>
+    </h1>
+
+    <h2>languages</h2>
+    <ul>
+        <li th:each="language : ${languages}" th:text="${language}"></li>
+    </ul>
+</body>
+</html>
